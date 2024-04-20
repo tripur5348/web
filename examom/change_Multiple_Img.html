@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .img
+        {
+          
+            width: 300px;
+            height: 400px;
+            border: 5px solid rgb(0, 139, 139);
+            margin-top: 60px;
+            box-shadow: 9px 7px 6px black;
+        
+        }
+
+       .btn
+        {
+            position: relative;
+            top: 5px;
+            left: -10px;
+            border-radius: 12px;
+            border: 3px solid black;
+            height: 50px;
+            width: 125px;
+            background-color: cadetblue;
+            font-size: 20px;
+            text-align: left;
+            color: darkgreen;
+            padding: 12px 28px;
+            box-shadow: 9px 7px 6px black;
+            margin: 15px
+            
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div style="text-align: center;">
+        <img class="img" id="img1" src="../Tasks/Gulabjam.jpg" alt="Gulabjam">
+        <h4 id="D1" style="font-size: 30px;">Gulabjam</h4>
+
+        <button class="btn" type="button" onclick="changeImg()"> <b>Gulabjam</b> </button>
+        <button class="btn" type="button" onclick="changeImg1()"> <b>Kaju</b></button>
+        <button class="btn" type="button" onclick="changeImg2()"> <b>Laddu</b> </button>
+        <button class="btn" type="button" onclick="changeImg3()"> <b>Jalebi</b> </button>
+        <button class="btn" type="button" onclick="changeImg4()"> <b>Barfi</b></button>
+        
+
+    </div>
+
+    <script>
+        function changeImg()
+        {
+            document.getElementById("img1").src = "../Tasks/Gulabjam.jpg";
+            document.getElementById("D1").innerHTML = "Gulabjam";
+        }
+
+        function changeImg1()
+        {
+            document.getElementById("img1").src = "../Tasks/Kaju.webp";
+            document.getElementById("D1").innerHTML = "Kajukatali";
+        }
+
+        function changeImg2()
+        {
+            document.getElementById("img1").src = "../Tasks/laddu.jpg";
+            document.getElementById("D1").innerHTML = "Laddu";
+        }
+
+        function changeImg3()
+        {
+            document.getElementById("img1").src = "../Tasks/jalebi1.webp";
+            document.getElementById("D1").innerHTML = "Jalebi";
+        }
+
+        function changeImg4()
+        {
+            document.getElementById("img1").src = "../Tasks/barfi.jpg";
+            document.getElementById("D1").innerHTML = "Barfi";
+        }
+        
+    </script>
+</body>
+</html>

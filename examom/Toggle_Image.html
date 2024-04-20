@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div  style="text-align: center;">
+        <img id="img1" src="../Bootstrap/Assests/samosa.jpg" alt="samosa"> <br> <br>
+        <h2 >Samosa</h2>
+        <button type="button" onclick="ChangeImg()"> Change Image</button>
+        
+
+    </div>
+
+    <script>
+        let iscond=false;
+        function ChangeImg(){
+            // window.alert("hi")
+           iscond = !iscond;
+        //    let pic = document.getElementById("img1").src = "../Bootstrap/Assests/dosa.jpg";
+            if(iscond){
+                
+                document.getElementById("img1").src = "../Bootstrap/Assests/dosa.jpg";
+            }
+            else{
+                
+                document.getElementById("img1").src = "../Bootstrap/Assests/samosa.jpg";
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

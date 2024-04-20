@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form-control">
+    <div>
+        <img id="img1" src="../Images/cr.jfif"  alt="Ronaldo"><br>
+    </div>
+    <div>
+        <P id="name" style="color: red"><b>Ronaldo</b></P>
+    </div>
+    <div>
+        <button type="button" onclick="Ronaldo()" style="background-color: chocolate;">Ronaldo</button>
+        <button type="button" onclick="Messi()" style="background-color: chocolate;">Messi</button>
+        <button type="button" onclick="Neymar()" style="background-color: chocolate;">Neymar</button>
+        <button type="button" onclick="Rashford()" style="background-color: chocolate;">Rashford</button>
+        <button type="button" onclick="Ronaldhino()" style="background-color: chocolate;">Ronaldhino</button>
+    </div>
+    </form>
+    <script>
+        function Ronaldo(){
+            document.getElementById("img1").src="../Images/cr.jfif";
+            document.getElementById("name").innerHTML="Ronaldo";
+        }
+        function Messi(){
+            document.getElementById("img1").src="../Images/mes.jfif";
+            document.getElementById("name").innerHTML="Messi";
+        }
+        function Neymar(){
+            document.getElementById("img1").src="../Images/ney.jfif";
+            document.getElementById("name").innerHTML="Neymar";
+        }
+        function Rashford(){
+            document.getElementById("img1").src="../Images/ras.jfif";
+            document.getElementById("name").innerHTML="Rashford";
+        }
+        function Ronaldhino(){
+            document.getElementById("img1").src="../Images/dhino.jfif";
+            document.getElementById("name").innerHTML="Ronaldhino";
+        }
+    </script>
+   
+</body>
+</html>

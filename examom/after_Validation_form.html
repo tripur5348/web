@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./after_Validation_form.js"></script>
+</head>
+<body>
+    
+    <form  name="myForm" onsubmit="return checkAll()">
+        <div>
+            <label>Enter Your Name : </label>
+            <input type="text" name = "fName" id ="fName">
+        </div> <br>
+
+        <div>
+            <label>Select Qualification</label>
+            <input type="checkbox" name="edu" value="ssc">SSC
+            <input type="checkbox" name="edu" value="hsc">HSC
+            <input type="checkbox" name="edu" value="pg">PG
+            <input type="checkbox" name="edu" value="ug">UG
+        </div> <br>
+
+        <div>
+            <label> Enter Contact NO</label>        
+            <input type="text"  id="con" name="con" > 
+        </div>
+
+        <div>
+            <br>
+
+            <label>Re-Enter Contact NO</label>
+            <input type="text" id="ReCon" name="ReCon">
+        </div>
+
+        <div>
+            <br>
+            <label>Enter Your Email</label>
+            <input type="text" id="email" name="email">
+        </div>
+
+        <div>
+            <br>
+            <label>Enter the Password</label>
+            <input type="password" id="pass" name="pass">
+        </div>
+
+        <div>
+            <label>Enter Date of Birth</label>
+            <input type="date" id="date1" name="date1">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
